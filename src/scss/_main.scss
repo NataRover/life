@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Nothing+You+Could+Do&family=Press+Start+2P&family=Roboto+Serif:wght@400;500;600;700&display=swap');
 @import "variable";
 
+
 .container {
     width: 100%;
     background-color: $bg-color;
-
     .header {
         position: relative;
         padding: 2% 4%;
         margin: 0 auto;
         width: 100%;
-        background-image: url("/public/img_header/Background.png");
+        background-image: url("/public/img_header/Background.png"); 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         color: aliceblue;
 
-        // выпадающее меню
+        // выпадающее меню  
         .container-drop-menu {
             position: absolute;
             top: 0;
@@ -25,7 +25,9 @@
             padding: 2% 4%;
             margin: 0 auto;
             width: 100%;
+            height: 100vh;
             background-image: url("/public/img_header/drop-menu/Background.png");
+            background-color: #0013245f;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -34,6 +36,10 @@
 
             @media screen and (max-width: 480px) {
                 // display: block;
+            }
+
+            & ::backdrop {
+                background-color: #001324;
             }
 
             h3 {
@@ -110,6 +116,11 @@
                     font-family: 'Press Start 2P', cursive;
                     font-size: 14px;
                     line-height: 200%;
+
+                    a {
+                        color: $text-color;
+                    }
+
                 }
 
                 .drop-menu-faq {
@@ -118,25 +129,25 @@
 
                     .drop-menu-border-faq {
                         position: relative;
-
                         width: 95%;
                     }
 
                     .drop-menu-border-faq-title {
                         position: absolute;
                         top: 35%;
-                        left: 10%;
-                    }
+                        width: calc(100% - 5px);
 
-                    :first-child {
-                        font-family: 'Press Start 2P', cursive;
-                        font-size: 14px;
-                        color: $base-color;
-                    }
+                        :first-child {
+                            font-family: 'Press Start 2P', cursive;
+                            font-size: 12px;
+                            color: $base-color;
+                        }
 
-                    :last-child {
-                        font-size: 16px;
-                        color: #c4fff1;
+                        :last-child {
+                            color: #c4fff1;
+                            font-size: 16px;
+                            font-family: 'Exo 2', sans-serif;
+                        }
                     }
                 }
 
