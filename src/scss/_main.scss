@@ -20,8 +20,15 @@
             justify-content: space-between;
 
             .header-nav-logo {
-                display: flex;
-                align-items: flex-start;
+            
+                width: 69px;
+                height: 57.397px;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
             }
 
             .nav-block {
@@ -38,6 +45,7 @@
             }
 
             .header-nav-right-block {
+                width: 30%;
                 text-align: right;
                 font-size: 16px;
                 display: flex;
@@ -74,6 +82,7 @@
             }
 
             .header-nav-left-block {
+                width: 30%;
                 font-size: 16px;
                 display: flex;
                 flex-direction: column;
@@ -162,7 +171,7 @@
 
                 .header-btn-border {
                     width: 23.5vw;
-                    height: 16.5vh;
+                    height: 51px;
                     margin-top: 3vh;
                     background-color: $base-color;
                     -webkit-clip-path: polygon(7% 0, 93% 0, 100% 25%, 85% 100%, 15% 100%, 0 25%);
@@ -173,7 +182,7 @@
                     .header-btn {
                         & button {
                             width: 23.2vw;
-                            height: 15.8vh;
+                            height: 49px;
                             background: linear-gradient(1.53deg, rgba(0, 137, 105, 0.8) 10%, rgb(12, 30, 48) 80%);
                             color: $base-color;
                             font-family: Font Over;
