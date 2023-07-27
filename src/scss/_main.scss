@@ -384,12 +384,12 @@
         color: $text-color;
         width: 100%;
         width: 1920px;
-        overflow-x:auto;
+        overflow-x: auto;
+
         .card {
             border: 0.3vw solid $base-color;
             width: 431px;
             height: 845px;
-
 
             .header-card {
                 position: relative;
@@ -432,7 +432,6 @@
                     width: 12px;
                     height: 290px;
 
-
                     img {
                         width: 100%;
                         min-height: 100%;
@@ -444,13 +443,11 @@
             //vector
             .svg-hero-cards-vector-ridht {
                 left: 0;
-
             }
 
             //vector
             .svg-hero-cards-vector-left {
                 right: 0;
-
             }
         }
     }
